@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
-from vector_store import VectorStore
+from vector_store.vector_store import VectorStore
+
 
 app = Flask(__name__)
 vs = VectorStore()
