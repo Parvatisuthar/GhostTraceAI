@@ -1,0 +1,14 @@
+
+RATE LIMIT POLICY — VERSION 3.0
+
+Limits:
+100 requests/min per API key
+
+Burst:
+20 req/sec
+
+429 Response:
+Retry-After header mandatory
+
+Abuse Protection:
+Automatic temporary IP blocking

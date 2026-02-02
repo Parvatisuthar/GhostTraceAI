@@ -1,0 +1,33 @@
+
+PAYMENT API DOCUMENTATION — VERSION 2.0
+
+Base URL:
+https://api.product.com/v2/
+
+Endpoint:
+POST /payments/charge
+
+Request:
+{
+  "card": {
+     "number": "string",
+     "expiry": "MM/YY",
+     "cvv": "123"
+  },
+  "amount": 500,
+  "currency": "INR"
+}
+
+Headers:
+Authorization: Bearer <token>
+
+Response:
+{
+  "status": "success",
+  "payment_id": "pay_456"
+}
+
+New Features:
+- Currency support
+- Webhook callbacks added
+- Retry-safe using idempotency-key header

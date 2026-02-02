@@ -1,0 +1,18 @@
+
+WEBHOOK EVENTS — VERSION 3.0
+
+payment.authorized
+payment.failed
+payment.captured
+
+Payload Example:
+{
+  "event": "payment.captured",
+  "payment_id": "pay_999",
+  "amount": 500,
+  "currency": "INR",
+  "timestamp": "2024-11-20T10:30:00Z"
+}
+
+Security:
+HMAC signature verification required

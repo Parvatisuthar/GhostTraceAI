@@ -1,0 +1,15 @@
+
+DEPRECATION NOTICE — JAN 2024
+
+APIs Deprecated:
+v1.0 — Fully disabled
+v2.0 — Support ends Dec 2024
+
+Risks:
+Older SDKs may fail silently
+
+Action Required:
+Migrate to v3 immediately
+
+Support:
+developer-support@product.com

@@ -1,0 +1,15 @@
+
+ANDROID SDK — VERSION 2.0
+
+Initialization:
+PaymentSDK.init(context, apiKey)
+
+Charge Payment:
+sdk.charge(cardObj, amount, currency)
+
+Callbacks:
+onSuccess(paymentId)
+onFailure(errorCode)
+
+Min Android:
+API 23+
