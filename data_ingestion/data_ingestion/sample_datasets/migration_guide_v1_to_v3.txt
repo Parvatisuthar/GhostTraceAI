@@ -1,0 +1,19 @@
+
+MIGRATION GUIDE: API v1 → v3
+
+Major Changes:
+- Card data not allowed directly
+- OAuth2 required
+- Payment method tokenization mandatory
+
+Steps:
+1. Create customer object
+2. Generate payment method token
+3. Use /payments endpoint
+
+Common Errors:
+401: Invalid OAuth token
+422: Missing customer_id
+
+Testing:
+Use sandbox tokens only

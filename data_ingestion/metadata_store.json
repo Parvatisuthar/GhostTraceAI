@@ -1,0 +1,82 @@
+[
+  {
+    "file": "webhook_events_v3.0.txt",
+    "path": "data_ingestion/sample_datasets/webhook_events_v3.0.txt",
+    "version": "3.0",
+    "deprecated": false,
+    "doc_type": "payment_api",
+    "ingested_at": "2026-02-01T17:02:54.014832"
+  },
+  {
+    "file": "config_options_v3.0.txt",
+    "path": "data_ingestion/sample_datasets/config_options_v3.0.txt",
+    "version": "3.0",
+    "deprecated": false,
+    "doc_type": "webhook",
+    "ingested_at": "2026-02-01T17:02:54.014878"
+  },
+  {
+    "file": "payment_api_v1.0_2021.txt",
+    "path": "data_ingestion/sample_datasets/payment_api_v1.0_2021.txt",
+    "version": "1.0",
+    "deprecated": true,
+    "doc_type": "payment_api",
+    "ingested_at": "2026-02-01T17:02:54.014914"
+  },
+  {
+    "file": "payment_api_v3.0_2024.txt",
+    "path": "data_ingestion/sample_datasets/payment_api_v3.0_2024.txt",
+    "version": "3.0",
+    "deprecated": false,
+    "doc_type": "payment_api",
+    "ingested_at": "2026-02-01T17:02:54.014956"
+  },
+  {
+    "file": "auth_api_v1.0_2021.txt",
+    "path": "data_ingestion/sample_datasets/auth_api_v1.0_2021.txt",
+    "version": "1.0",
+    "deprecated": false,
+    "doc_type": "auth_api",
+    "ingested_at": "2026-02-01T17:02:54.015000"
+  },
+  {
+    "file": "deprecation_notice_2024.txt",
+    "path": "data_ingestion/sample_datasets/deprecation_notice_2024.txt",
+    "version": "unknown",
+    "deprecated": true,
+    "doc_type": "sdk",
+    "ingested_at": "2026-02-01T17:02:54.015037"
+  },
+  {
+    "file": "migration_guide_v1_to_v3.txt",
+    "path": "data_ingestion/sample_datasets/migration_guide_v1_to_v3.txt",
+    "version": "unknown",
+    "deprecated": false,
+    "doc_type": "payment_api",
+    "ingested_at": "2026-02-01T17:02:54.015067"
+  },
+  {
+    "file": "rate_limits_v3.0.txt",
+    "path": "data_ingestion/sample_datasets/rate_limits_v3.0.txt",
+    "version": "3.0",
+    "deprecated": false,
+    "doc_type": "config",
+    "ingested_at": "2026-02-01T17:02:54.015105"
+  },
+  {
+    "file": "payment_api_v2.0_2022.txt",
+    "path": "data_ingestion/sample_datasets/payment_api_v2.0_2022.txt",
+    "version": "2.0",
+    "deprecated": false,
+    "doc_type": "payment_api",
+    "ingested_at": "2026-02-01T17:02:54.015136"
+  },
+  {
+    "file": "sdk_android_v2.0_guide.txt",
+    "path": "data_ingestion/sample_datasets/sdk_android_v2.0_guide.txt",
+    "version": "2.0",
+    "deprecated": false,
+    "doc_type": "payment_api",
+    "ingested_at": "2026-02-01T17:02:54.015165"
+  }
+]

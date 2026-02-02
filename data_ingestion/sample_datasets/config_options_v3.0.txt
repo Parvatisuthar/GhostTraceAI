@@ -1,0 +1,17 @@
+
+CONFIGURATION OPTIONS — VERSION 3.0
+
+Timeout:
+Default: 30 seconds
+
+Retry Policy:
+Exponential backoff
+
+Webhook Retry:
+Up to 5 attempts
+
+Security:
+IP allowlisting supported
+
+Dashboard Settings:
+Enable fraud checks
