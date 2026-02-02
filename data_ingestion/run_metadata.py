@@ -1,6 +1,7 @@
 import os
 from metadata_manager import MetadataManager
-from vector_store import VectorStore
+from vector_store.vector_store import VectorStore
+
 from create_sample_datasets import create_sample_datasets
 
 sample_dir = "data_ingestion/sample_datasets"

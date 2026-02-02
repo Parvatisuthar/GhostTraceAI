@@ -1,0 +1,31 @@
+
+PAYMENT API DOCUMENTATION — VERSION 3.0 (LATEST)
+
+Base URL:
+https://api.product.com/v3/
+
+Endpoint:
+POST /payments
+
+Request:
+{
+  "payment_method_id": "pm_987",
+  "amount": 500,
+  "currency": "INR",
+  "customer_id": "cust_001"
+}
+
+Authentication:
+OAuth2 Access Token
+
+Response:
+{
+  "status": "authorized",
+  "payment_id": "pay_999",
+  "next_action": "3ds_verification"
+}
+
+Breaking Changes:
+- Card details never sent directly
+- Tokenized payment methods only
+- Mandatory customer object

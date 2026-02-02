@@ -1,0 +1,30 @@
+
+PAYMENT API DOCUMENTATION — VERSION 1.0 (DEPRECATED)
+
+Base URL:
+https://api.product.com/v1/
+
+Endpoint:
+POST /charge
+
+Request JSON:
+{
+  "card_number": "string",
+  "expiry": "MM/YY",
+  "cvv": "123",
+  "amount": 500
+}
+
+Response:
+{
+  "status": "success",
+  "transaction_id": "tx_123"
+}
+
+Authentication:
+API Key in header: X-API-KEY
+
+Notes:
+- No idempotency support
+- No currency field
+- No webhook support

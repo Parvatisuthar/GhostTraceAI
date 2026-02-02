@@ -5,7 +5,7 @@
     "version": "3.0",
     "deprecated": false,
     "doc_type": "payment_api",
-    "ingested_at": "2026-02-01T17:02:54.014832"
+    "ingested_at": "2026-02-01T16:59:38.015719"
   },
   {
     "file": "config_options_v3.0.txt",
@@ -13,7 +13,7 @@
     "version": "3.0",
     "deprecated": false,
     "doc_type": "webhook",
-    "ingested_at": "2026-02-01T17:02:54.014878"
+    "ingested_at": "2026-02-01T16:59:38.015774"
   },
   {
     "file": "payment_api_v1.0_2021.txt",
@@ -21,7 +21,7 @@
     "version": "1.0",
     "deprecated": true,
     "doc_type": "payment_api",
-    "ingested_at": "2026-02-01T17:02:54.014914"
+    "ingested_at": "2026-02-01T16:59:38.015816"
   },
   {
     "file": "payment_api_v3.0_2024.txt",
@@ -29,7 +29,7 @@
     "version": "3.0",
     "deprecated": false,
     "doc_type": "payment_api",
-    "ingested_at": "2026-02-01T17:02:54.014956"
+    "ingested_at": "2026-02-01T16:59:38.015847"
   },
   {
     "file": "auth_api_v1.0_2021.txt",
@@ -37,7 +37,7 @@
     "version": "1.0",
     "deprecated": false,
     "doc_type": "auth_api",
-    "ingested_at": "2026-02-01T17:02:54.015000"
+    "ingested_at": "2026-02-01T16:59:38.015880"
   },
   {
     "file": "deprecation_notice_2024.txt",
@@ -45,7 +45,7 @@
     "version": "unknown",
     "deprecated": true,
     "doc_type": "sdk",
-    "ingested_at": "2026-02-01T17:02:54.015037"
+    "ingested_at": "2026-02-01T16:59:38.015915"
   },
   {
     "file": "migration_guide_v1_to_v3.txt",
@@ -53,7 +53,7 @@
     "version": "unknown",
     "deprecated": false,
     "doc_type": "payment_api",
-    "ingested_at": "2026-02-01T17:02:54.015067"
+    "ingested_at": "2026-02-01T16:59:38.015949"
   },
   {
     "file": "rate_limits_v3.0.txt",
@@ -61,7 +61,7 @@
     "version": "3.0",
     "deprecated": false,
     "doc_type": "config",
-    "ingested_at": "2026-02-01T17:02:54.015105"
+    "ingested_at": "2026-02-01T16:59:38.015981"
   },
   {
     "file": "payment_api_v2.0_2022.txt",
@@ -69,7 +69,7 @@
     "version": "2.0",
     "deprecated": false,
     "doc_type": "payment_api",
-    "ingested_at": "2026-02-01T17:02:54.015136"
+    "ingested_at": "2026-02-01T16:59:38.016012"
   },
   {
     "file": "sdk_android_v2.0_guide.txt",
@@ -77,6 +77,6 @@
     "version": "2.0",
     "deprecated": false,
     "doc_type": "payment_api",
-    "ingested_at": "2026-02-01T17:02:54.015165"
+    "ingested_at": "2026-02-01T16:59:38.016041"
   }
 ]
