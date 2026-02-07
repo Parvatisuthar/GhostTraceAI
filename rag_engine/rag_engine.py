@@ -4,7 +4,7 @@ import json
 import numpy as np
 import faiss
 from sklearn.feature_extraction.text import TfidfVectorizer
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict, Optional
 
 
 class GhostRAG:
@@ -28,7 +28,9 @@ class GhostRAG:
             return
 
         if not self.index_path.exists():
-            raise FileNotFoundError(f"❌ Run `python data_ingestion/run_metadata.py` first")
+            raise FileNotFoundError(
+                "❌ Run `python data_ingestion/run_metadata.py` first to build the index."
+            )
 
         self.index = faiss.read_index(str(self.index_path))
 
@@ -53,23 +55,17 @@ class GhostRAG:
 
         results = []
         for i, idx in enumerate(indices[0]):
-            results.append({
-                "rank": i + 1,
-                "score": float(distances[0][i]),
-                "file": self.metadata[idx]["file"],
-                "version": self.metadata[idx]["version"],
-                "deprecated": self.metadata[idx]["deprecated"],
-                "doc_type": self.metadata[idx]["doc_type"],
-                "snippet": self.texts[idx][:250] + "...",
-                "path": self.metadata[idx]["path"]
-            })
+            meta = self.metadata[idx]
+            results.append(
+                {
+                    "rank": i + 1,
+                    "score": float(distances[0][i]),
+                    "file": meta["file"],
+                    "version": meta["version"],
+                    "deprecated": meta["deprecated"],
+                    "doc_type": meta["doc_type"],
+                    "snippet": self.texts[idx][:250] + "...",
+                    "path": meta["path"],
+                }
+            )
         return results
-
-    class GhostRAG:
-        def __init__(self):
-            from vector_store.vector_store import VectorStore
-            self.vs = VectorStore()
-            self.vs.load()
-
-        def search(self, query: str, top_k: int = 3):
-            return self.vs.search(query, top_k=top_k)

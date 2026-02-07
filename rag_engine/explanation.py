@@ -6,7 +6,6 @@ Role 4: Risk Analysis → Human-readable explanations for developers.
 from typing import List, Dict, Optional
 from dataclasses import dataclass
 from enum import Enum
-from collections import Counter
 
 
 class RiskLevel(Enum):
@@ -26,7 +25,7 @@ class RiskAssessment:
 
 def calculate_risk(results: List[Dict]) -> RiskAssessment:
     """
-    Convert RAG results → structured risk assessment.
+    Convert RAG resuloqts → structured risk assessment.
 
     Args:
         results: List from GhostRAG.search() with file, version, deprecated, doc_type
@@ -142,7 +141,7 @@ def format_for_ui(assessment: RiskAssessment) -> Dict:
             "reasons": assessment.reasons,
             "recommendations": assessment.recommendations[:3]  # Max 3 for UI
         },
-        "explanation": assessment.explanation
+        "explanation": "<rule-based paragraph>"
     }
 
 def generate_explanation(risk_result: dict) -> str:
