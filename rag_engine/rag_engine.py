@@ -1,10 +1,10 @@
 # rag_engine/rag_engine.py
-from pathlib import Path
 import json
-import numpy as np
+from pathlib import Path
+from typing import List, Dict, Optional
+
 import faiss
 from sklearn.feature_extraction.text import TfidfVectorizer
-from typing import List, Dict, Tuple, Optional
 
 
 class GhostRAG:
@@ -73,3 +73,7 @@ class GhostRAG:
 
         def search(self, query: str, top_k: int = 3):
             return self.vs.search(query, top_k=top_k)
+
+
+def rag_pipeline():
+    return None
