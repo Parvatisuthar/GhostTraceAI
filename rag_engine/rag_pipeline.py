@@ -40,8 +40,8 @@ def pretty_print(result: dict):
 
 
 
-if __name__ == "__main__":
-    def main():
+
+def run_rag():
         print("🧠 GhostTrace Interactive RAG")
         print("Type 'exit' to quit")
         print("=" * 50)
@@ -62,8 +62,10 @@ if __name__ == "__main__":
             print("\n🧠 GHOSTTRACE ANALYSIS")
             print("=" * 50)
             print(f"Query: {result['query']}")
-            print(f"Risk Level: {result['risk_assessment']['risk']['level']} "
-                  f"(Score: {result['risk_assessment']['risk']['score']})")
+            print(
+                f"Risk Level: {result['risk_assessment']['risk']['level']} "
+                f"(Score: {result['risk_assessment']['risk']['score']})"
+            )
 
             print("\nWhy this risk?")
             for reason in result['risk_assessment']['risk']['reasons']:
@@ -78,6 +80,6 @@ if __name__ == "__main__":
                 print(f" - {doc['file']} (v{doc['version']})")
 
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    run_rag()
 

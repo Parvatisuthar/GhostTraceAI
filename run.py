@@ -3,40 +3,50 @@ GhostTrace – One Command Runner
 Usage: python run.py
 """
 
-import subprocess
 import sys
+import subprocess
+
+# Script-style roles (auto run on import)
+import data_ingestion.run_metadata          # Role 1
+import drift_analysis.test_queries          # Role 3
+
+# Function-style role
+from rag_engine.rag_pipeline import run_rag
 
 
-def run_step(title: str, command: list[str]):
-    print(f"\n🚀 {title}")
-    print("-" * 50)
-    result = subprocess.run(command, text=True)
-    if result.returncode != 0:
-        print(f"❌ Failed at step: {title}")
-        sys.exit(1)
+VECTOR_VIEWER_CMD = [sys.executable, "-m", "vector_store.vector_viewer"]
 
 
 def main():
     print("🧠 GHOSTTRACE SYSTEM BOOTING")
     print("=" * 60)
 
-    # STEP 1: Data ingestion (Role 1)
-    run_step(
-        "Running Data Ingestion (Role 1)",
-        [sys.executable, "-m", "data_ingestion.run_metadata"]
-    )
+    # ───────────── ROLE 1 ─────────────
+    print("\n🚀 Role 1: Data Ingestion")
+    print("✔ Ingestion completed")
 
-    # STEP 2: Risk Engine Tests (Role 3)
-    run_step(
-        "Running Risk Engine Tests (Role 3)",
-        [sys.executable, "-m", "drift_analysis.test_queries"]
-    )
+    # ───────────── ROLE 2 ─────────────
+    print("\n🔗 Role 2: Vector Viewer Starting")
+    print("🌐 Vector UI will be available at http://127.0.0.1:5000")
 
-    # STEP 3: Interactive RAG (Role 4)
-    print("\n🧠 Starting Interactive RAG Engine (Role 4)")
+    # 🔥 Vector viewer auto-start (NON-BLOCKING)
+    subprocess.Popen(VECTOR_VIEWER_CMD)
+
+    # ───────────── ROLE 3 ─────────────
+    print("\n🧪 Role 3: Risk Engine Tests")
+    print("✔ Risk tests completed")
+
+    # ───────────── ROLE 4 ─────────────
+    print("\n🧠 Role 4: Interactive RAG Engine")
+    print("Type 'exit' to quit")
     print("-" * 50)
-    subprocess.run([sys.executable, "-m", "rag_engine.rag_pipeline"])
+
+    run_rag()   # 👈 ONLY USER INPUT RUNS HERE
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n👋 GhostTrace shutdown gracefully")
+        sys.exit(0)

@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  ghosttrace-api:      # Role 5 Backend
+    build: ./api
+    ports:
+      - "8000:8000"
+    env_file: .env
+    volumes:
+      - ./rag_engine:/app/rag_engine  # Mount your Role 4
+
+  ghosttrace-ui:       # Streamlit Frontend
+    build: ./dashboard
+    ports:
+      - "8501:8501"
+    depends_on:
+      - ghosttrace-api
+    environment:
+      - API_URL=http://ghosttrace-api:8000
