@@ -1,7 +1,8 @@
 # rag_engine/__init__.py
-from .rag_engine import GhostRAG
-from .rag_pipeline import analyze_query
-from .explanation import RiskLevel, generate_explanation  # optional helper
 
 __version__ = "1.0.0"
-__all__ = ["GhostRAG", "analyze_query", "RiskLevel", "generate_explanation"]
+
+# Package exports ko ab direct modules se import karenge:
+#   from rag_engine.rag_engine import GhostRAG
+#   from rag_engine.rag_pipeline import analyze_query
+#   from rag_engine.explanation import RiskLevel

@@ -1,67 +1,113 @@
 # rag_engine/llm_client.py
 import subprocess
-from typing import List, Dict
+from typing import List
+
+OLLAMA_MODEL = "llama3"   # change if you use another model
 
 
-def _run_ollama(prompt: str, model: str = "llama3") -> str:
+def _call_ollama(prompt: str) -> str:
     """
-    Call Ollama from CLI: `ollama run <model> -p "<prompt>"`.
-    If anything fails, return empty string so rest of pipeline still works.
+    Calls Ollama via CLI and returns raw text.
     """
     try:
-        proc = subprocess.run(
-            ["ollama", "run", model, "-p", prompt],
-            capture_output=True,
+        result = subprocess.run(
+            ["ollama", "run", OLLAMA_MODEL],
+            input=prompt,
             text=True,
+            capture_output=True,
             check=True,
         )
-        return proc.stdout.strip()
+        return result.stdout.strip()
     except Exception as e:
-        # You can log this later if needed
-        print(f"[LLM WARNING] Ollama call failed: {e}")
+        print("❌ Ollama error:", e)
         return ""
 
 
-def build_context_for_llm(query: str, documents: List[Dict]) -> str:
+# ─────────────────────────────────────────────────────
+# 🔹 USED BY RAG PIPELINE (audit explanation)
+# ─────────────────────────────────────────────────────
+def llm_explain(
+    query: str,
+    documents: List[dict],
+    risk_level: str,
+    persona: str = "developer",
+) -> str:
     """
-    Create a compact context string for LLM from top documents.
+    Generate persona-based explanation for audit result.
     """
-    parts = []
-    for d in documents[:5]:  # max 5 docs
-        file_name = d.get("file", "unknown")
-        snippet = d.get("snippet", "")[:600]
-        parts.append(f"[{file_name}]\n{snippet}")
-    context_block = "\n\n".join(parts)
 
-    return f"""User question:
-{query}
+    if not documents:
+        return ""
 
-Relevant documentation:
-{context_block}
-"""
-
-
-def llm_explain(query: str, documents: List[Dict], risk_level: str) -> str:
-    """
-    Ask LLM to generate bullet-point explanation.
-    Returns empty string if LLM not available.
-    """
-    context = build_context_for_llm(query, documents)
+    doc_list = ""
+    for d in documents[:3]:
+        doc_list += f"- {d['file']} (v{d.get('version','?')})\n"
 
     prompt = f"""
-You are GhostTrace, an API and contract risk analysis assistant.
+You are an AI Risk & Compliance Auditor.
 
-The current risk level (based on rule-based analysis) is: {risk_level}.
+Persona: {persona.upper()}
+Risk Level: {risk_level}
 
-{context}
+User Question:
+{query}
 
-Write a short explanation in 3–5 bullet points covering:
-- Why this query looks risky or safe based on the documents
-- Mention deprecated or outdated versions visible in file names
-- Mention if any critical domains (payment, auth, webhook) are involved
+Documents Used:
+{doc_list}
 
-Be concise and professional. Start each line with "- ".
-Don't invent new APIs or files, only refer to what you see.
+Explain:
+- Why this risk level was assigned
+- What the user should be careful about
+- Keep it concise and practical
 """
 
-    return _run_ollama(prompt)
+    return _call_ollama(prompt)
+
+
+# ─────────────────────────────────────────────────────
+# 🔹 FEATURE-4: LLM-DRIVEN QUERY SUGGESTIONS
+# ─────────────────────────────────────────────────────
+def suggest_queries_for_dataset(
+    file_names: List[str],
+    snippets: List[str],
+    max_queries: int = 5,
+) -> List[str]:
+    """
+    Generate audit-style questions based on uploaded docs.
+    """
+
+    if not file_names or not snippets:
+        return []
+
+    context = ""
+    for name, snip in zip(file_names, snippets):
+        context += f"\nFILE: {name}\nSNIPPET:\n{snip[:300]}\n"
+
+    prompt = f"""
+You are an AI Risk & Compliance Auditor.
+
+Based on the following documentation snippets,
+generate {max_queries} HIGH-VALUE audit questions.
+
+Rules:
+- Focus on migration, versioning, security, compliance, or risks
+- One question per line
+- No numbering, no bullets, no explanations
+
+Documentation:
+{context}
+
+Output ONLY the questions.
+"""
+
+    raw = _call_ollama(prompt)
+    if not raw:
+        return []
+
+    questions = []
+    for line in raw.splitlines():
+        line = line.strip("-• ").strip()
+        if len(line) > 10:
+            questions.append(line)
+
+    return questions[:max_queries]
