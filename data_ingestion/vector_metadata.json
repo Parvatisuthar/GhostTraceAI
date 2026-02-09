@@ -618,5 +618,545 @@
     "path": "uploaded/vpn_setup_guide_v3.0_2024.txt",
     "dataset_id": "user_upload",
     "chunk_id": 0
+  },
+  {
+    "file": "access_control_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/access_control_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "cloud_backup_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/cloud_backup_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "deployment_runbook_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/deployment_runbook_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "firewall_config_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/firewall_config_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "incident_response_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/incident_response_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "network_troubleshoot_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/network_troubleshoot_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "server_maintenance_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/server_maintenance_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "system_monitoring_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/system_monitoring_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "access_control_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/access_control_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "cloud_backup_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/cloud_backup_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "deployment_runbook_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/deployment_runbook_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "firewall_config_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/firewall_config_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "incident_response_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/incident_response_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "network_troubleshoot_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/network_troubleshoot_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "server_maintenance_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/server_maintenance_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "system_monitoring_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/system_monitoring_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "access_control_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/access_control_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "cloud_backup_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/cloud_backup_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "deployment_runbook_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/deployment_runbook_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "firewall_config_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/firewall_config_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "incident_response_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/incident_response_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "network_troubleshoot_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/network_troubleshoot_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "server_maintenance_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/server_maintenance_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "system_monitoring_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/system_monitoring_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "access_control_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/access_control_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "cloud_backup_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/cloud_backup_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "deployment_runbook_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/deployment_runbook_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "firewall_config_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/firewall_config_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "incident_response_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/incident_response_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "network_troubleshoot_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/network_troubleshoot_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "server_maintenance_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/server_maintenance_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "system_monitoring_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/system_monitoring_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "access_control_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/access_control_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "cloud_backup_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/cloud_backup_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "deployment_runbook_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/deployment_runbook_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "firewall_config_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/firewall_config_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "incident_response_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/incident_response_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "network_troubleshoot_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/network_troubleshoot_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "password_reset_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/password_reset_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "server_maintenance_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/server_maintenance_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "system_monitoring_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/system_monitoring_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v1.0_2021.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v1.0_2021.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
+  },
+  {
+    "file": "vpn_setup_guide_v3.0_2024.txt",
+    "version": "user",
+    "deprecated": false,
+    "doc_type": "uploaded",
+    "path": "uploaded/vpn_setup_guide_v3.0_2024.txt",
+    "dataset_id": "user_upload",
+    "chunk_id": 0
   }
 ]
